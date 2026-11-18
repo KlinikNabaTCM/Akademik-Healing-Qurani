@@ -1,0 +1,8 @@
+{
+  "name": "Akademik Healing Qur’ani",
+  "description": "Platform Bimbingan Belajar Islam Terstruktur Selama 90 Hari - Belajar Ilmu Syar'i, Menata Hati, Mengamalkan Ilmu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

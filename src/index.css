@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-arabic: "Amiri", serif;
+  --font-certificate: "Cinzel", Georgia, serif;
+}
+
+.font-arabic {
+  font-family: "Amiri", serif;
+}
+
+.font-certificate {
+  font-family: "Cinzel", Georgia, serif;
+}
+
+/* Serene Islamic Academic Canvas Background */
+.academic-canvas {
+  background-color: #EDF3F0;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(6, 95, 70, 0.06) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(180, 83, 9, 0.045) 0px, transparent 45%),
+    radial-gradient(at 50% 100%, rgba(13, 148, 136, 0.05) 0px, transparent 50%);
+}
+
+/* Subtle Islamic Geometric Dot Pattern */
+.islamic-pattern {
+  background-color: #EDF3F0;
+  background-image: radial-gradient(rgba(6, 95, 70, 0.12) 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
+.emerald-mesh {
+  background: radial-gradient(circle at 10% 20%, rgba(6, 95, 70, 0.06) 0%, transparent 45%),
+              radial-gradient(circle at 90% 80%, rgba(217, 119, 6, 0.05) 0%, transparent 45%);
+}
+
+/* Print utilities for Certificates and Transcripts */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 1.2cm;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .print-break-inside-avoid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
